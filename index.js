@@ -32,7 +32,7 @@ function getAuthenticatedClient() {
     const oAuth2Client = new OAuth2Client(
       keys.installed.client_id,
       keys.installed.client_secret,
-      keys.installed.redirect_uris[1]
+      'http://localhost:3000/oauth2callback'
     );
  
     // Generate the url that will be used for the consent dialog.
